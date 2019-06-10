@@ -6,7 +6,7 @@ class Card extends Component{
         return(
         <div className="card-content mx-3 mt-3">
           <div className="row justify-content-between">
-                <h5 className="col font-weight-bold mb-4 ml-5">News</h5>
+                <h1 className="col font-weight-bold mb-4 ml-5">News</h1>
             </div>
             <tr>
             <div class="card mb-4 ml-5" style={{maxWidth: "540px"}}>
@@ -19,6 +19,7 @@ class Card extends Component{
                 <h5 class="card-title">Card </h5>
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                <button type="button" class="btn btn-warning">Read More</button>
               </div>
              </div>
             </div>
@@ -34,6 +35,7 @@ class Card extends Component{
                 <h5 class="card-title">asdfas</h5>
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                <button type="button" class="btn btn-warning">Read More</button>
                </div>
               </div>
              </div>
@@ -51,6 +53,7 @@ class Card extends Component{
                 <h5 class="card-title">asdfas</h5>
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                <button type="button" class="btn btn-warning">Read More</button>
                </div>
               </div>
              </div>
@@ -66,6 +69,7 @@ class Card extends Component{
                 <h5 class="card-title">asdfas</h5>
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                <button type="button" class="btn btn-warning">Read More</button>
                </div>
               </div>
              </div>

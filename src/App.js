@@ -3,6 +3,8 @@ import './App.css';
 import Card from './component/Card';
 import Navbar from './component/Navbar';
 import Gridimage from './component/Gridimage';
+import Location from './component/Location';
+import Footer from './component/Footer';
 
 function App() {
   return (
@@ -10,6 +12,8 @@ function App() {
       <Navbar/>
       <Gridimage/>
       <Card/>
+      <Location/>
+      <Footer/>
     </div>
   );
 }
