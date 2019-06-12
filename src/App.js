@@ -3,8 +3,9 @@ import './App.css';
 import Card from './component/Card';
 import Navbar from './component/Navbar';
 import Gridimage from './component/Gridimage';
-import Location from './component/Location';
+import Jumbotron from './component/JumbotronHero';
 import Footer from './component/Footer';
+import JumbotronTurney from './component/JumbotronTurney';
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
       <Navbar/>
       <Gridimage/>
       <Card/>
-      <Location/>
+      <Jumbotron/>
+      <JumbotronTurney/>
       <Footer/>
     </div>
   );
