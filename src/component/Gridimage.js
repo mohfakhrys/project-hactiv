@@ -1,7 +1,4 @@
 import React,{Component} from 'react'
-// import ayam_gulai from '../image/ayam_gulai.jpg';
-import dendeng from '../image/dendeng.jpg';
-import rendang from '../image/rendang.jpg';
 
 class Gridimage extends Component{
     render(){
@@ -15,24 +12,21 @@ class Gridimage extends Component{
                 </ul>
             <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="http://dapurku.co.id/image/data/Blog/2017/resep-gulai-ayam.jpg" class="d-block w-100" alt="..."/>
+                <img src="https://wallpapercave.com/wp/fio4NNX.jpg" class="d-block w-100" alt="..."/>
             <div class="carousel-caption d-none d-md-block">
-                <h5>First slide label</h5>
-                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                <h5>Welcome to the dota 2 web</h5>
             </div>
             </div>
             <div class="carousel-item">
-                <img src={dendeng} class="d-block w-100" alt="..."/>
+                <img src="https://wallpapercave.com/wp/p8fmFoP.jpg" class="d-block w-100" alt="..."/>
             <div class="carousel-caption d-none d-md-block">
-                <h5>Second slide label</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <h5>Welcome to the dota 2 web</h5>
             </div>
             </div>
             <div class="carousel-item">
-                <img src={rendang} class="d-block w-100" alt="..."/>
+                <img src="https://images2.alphacoders.com/474/thumb-1920-474206.jpg " class="d-block w-100" alt="..."/>
             <div class="carousel-caption d-none d-md-block">
-                <h5>Third slide label</h5>
-                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                <h5>Welcome to the dota 2 web</h5>
             </div>
             </div>
             </div>
