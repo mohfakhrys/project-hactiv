@@ -39,8 +39,8 @@ class jumbotron extends Component{
 
         return(
             <div className="heroes">
-                <h1 className="font-weight-bold mb-4 ml-5">Heroes</h1>
-            <div class="jumbotron ml-5 mr-5" style={{textAlign:"left"}}>
+                <h1 className="font-weight-bold mb-4 ml-5 text-white">Heroes</h1>
+            <div class="jumbotron" style={{textAlign:"left",marginLeft:"100px",marginRight:"100px"}}>
                     <tr>
                     <p>hero agility:{filterByAttrAgi.length !== 0 ?
                       filterByAttrAgi.map(result => {

@@ -1,22 +1,20 @@
 import React from 'react';
 import './App.css';
-import Card from './component/Card';
-import Navbar from './component/Navbar';
-import Gridimage from './component/Gridimage';
-import Jumbotron from './component/JumbotronHero';
-import Footer from './component/Footer';
-import JumbotronTurney from './component/JumbotronTurney';
+import Home from './page/Home'
+import Update from './page/Update'
+import News from './page/News'
+
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="Container">
-      <Navbar/>
-      <Gridimage/>
-      <Card/>
-      <Jumbotron/>
-      <JumbotronTurney/>
-      <Footer/>
-    </div>
+    <React.Fragment>
+          <Router>
+            <Route path='/' exact component={Home}></Route>
+            <Route path='/Update' exact component={Update}></Route>
+            <Route path='/News' exact component={News}></Route>
+          </Router>
+      </React.Fragment>
   );
 }
 

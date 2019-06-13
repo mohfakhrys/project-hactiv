@@ -5,7 +5,7 @@ class Card extends Component{
         return(
         <div className="card-content mx-3 mt-3">
           <div className="row justify-content-between">
-                <h1 className="col font-weight-bold mb-4 ml-5">News</h1>
+                <h1 className="col font-weight-bold mb-4 ml-5 text-white">News</h1>
             </div>
             <tr>
             <div class="card mb-5 " style={{maxWidth: "540px",marginLeft:"100px"}}>
@@ -24,7 +24,7 @@ class Card extends Component{
             </div>
           </div>
           <th scope="col">
-          <div class="card mb-5" style={{maxWidth: "540px",marginLeft:"100px"}}>
+          <div class="card mb-5" style={{maxWidth: "540px",marginLeft:"200px"}}>
                 <div class="row no-gutters">
                 <div class="col-md-4 mt-4">
                   <img src="http://cdn.dota2.com/apps/dota2/images/blogfiles/collectorscache_48s2u.png" class="card-img" alt="..."/>
@@ -42,7 +42,7 @@ class Card extends Component{
            </th>
           </tr>
           <tr> 
-            <div class="card mb-5" style={{maxWidth: "540px", marginLeft:"100px" }}>
+            <div class="card mb-5" style={{maxWidth: "540px", marginLeft:"100px",marginTop:"50px"}}>
                 <div class="row no-gutters">
                 <div class="col-md-4 mt-4">
                   <img src="http://cdn.dota2.com/apps/dota2/images/blogfiles/aghs_patch.png" class="card-img" alt="..."/>
@@ -58,7 +58,7 @@ class Card extends Component{
              </div>
             </div>
             <th scope="col">
-            <div class="card mb-5" style={{maxWidth: "540px",marginLeft:"100px"}}>
+            <div class="card mb-5" style={{maxWidth: "540px",marginLeft:"200px"}}>
                 <div class="row no-gutters">
                 <div class="col-md-4 mt-4">
                   <img src="http://cdn.dota2.com/apps/dota2/images/blogfiles/planetfall_blog_zxgim.jpg" class="card-img" alt="..."/>
