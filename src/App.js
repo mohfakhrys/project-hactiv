@@ -4,11 +4,18 @@ import Home from './page/Home'
 import Update from './page/Update'
 import Hero from './page/Hero'
 import News from './page/News'
-
+import { Provider } from 'react-redux';
+import { createStore, applyMiddleware } from 'redux';
+import reducers from './redux/reducers';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
+
+
+const createStoreWithMiddleware = applyMiddleware()(createStore);
+
 
 function App() {
   return (
+    <Provider store={createStoreWithMiddleware(reducers)}>
     <React.Fragment>
           <Router>
             <Route path='/' exact component={Home}></Route>
@@ -17,6 +24,7 @@ function App() {
             <Route path='/Hero' exact component={Hero}></Route>
           </Router>
       </React.Fragment>
+    </Provider>
   );
 }
 

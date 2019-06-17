@@ -9,15 +9,13 @@ class JumbotronDetail extends Component{
         };
         this.state.filterText="";
       }
-      s
       componentDidMount() {
         axios.get(`https://api.opendota.com/api/heroes`)
           .then(res => {
             const persons = res.data;
             this.setState({ persons });
           })
-      }
-
+      } 
     render(){
         const{persons}=this.state
         let filterByAttrAgi = persons.length !== 0 ?
@@ -26,25 +24,78 @@ class JumbotronDetail extends Component{
         })
         :
         []
-        
+        let filterByAttrStr = persons.length !== 0 ?
+        persons.filter(data=>{
+            return data.primary_attr === 'str'  
+        })
+        :
+        []
+        let filterByAttrInt = persons.length !== 0 ?
+        persons.filter(data=>{
+            return data.primary_attr === 'int'  
+        })
+        :
+        []
+
         return(
-            <div className="container bg-primary">
-                <div className="row ">
-                    <div className="col-md-auto">
-                        <img className="img mt-3" src="http://cdn.dota2.com/apps/dota2/images/blogfiles/collectorscache_48s2u.png" alt="TI9" style={{maxWidth:"100px",maxHeight:"100px",marginBottom:"20px"}}/>
-                    </div>
-                    <div className="col-md-auto">
-                        <img className="img mt-3" src="http://cdn.dota2.com/apps/dota2/images/blogfiles/collectorscache_48s2u.png" alt="TI9" style={{maxWidth:"100px",maxHeight:"100px",marginBottom:"20px"}}/>
-                    </div>
-                    <div className="col-md-auto">
-                        <a className="img" href="google.com">
-                            <img className="img mt-3" src="http://cdn.dota2.com/apps/dota2/images/blogfiles/collectorscache_48s2u.png" alt="TI9" style={{maxWidth:"100px",maxHeight:"100px",marginBottom:"20px"}}/>
-                        </a> 
-                    </div>
+            <div className="heroes">
+                <h1 className="font-weight-bold mb-4 ml-5 text-dark">Heroes</h1>
+            <div class="jumbotron" style={{textAlign:"left",marginLeft:"100px",marginRight:"100px"}}>
+                    <tr>
+                    <p>hero agility:{filterByAttrAgi.length !== 0 ?
+                      filterByAttrAgi.map(result => {
+                    return (
+                      <React.Fragment key={result.localized_name}>
+                        <li className= "spacing=10dp">              
+                          {result.localized_name},
+                        </li>
+                      </React.Fragment>
+                      )
+                     })
+                    :
+                    <h5>wait......</h5>
+                  }
+                  </p>
+                  <th scope="col">
+                  <p className="nama-hero font-weight-normal" style={{marginLeft:"300px"}}>
+                    hero int:{filterByAttrInt.length !== 0 ?
+                      filterByAttrInt.map(result => {
+                    return (
+                      <React.Fragment key={result.localized_name}>
+                        <li className= "spacing=10dp">              
+                          {result.localized_name},
+                        </li>
+                      </React.Fragment>
+                      )
+                     })
+                    :
+                    <h5>wait......</h5>
+                  }
+                  </p>
+                  </th>
+                  <th scope="col">
+                  <p className="nama-hero font-weight-normal" style={{marginLeft:"300px"}}>
+                    hero str:{filterByAttrStr.length !== 0 ?
+                      filterByAttrStr.map(result => {
+                    return (
+                      <React.Fragment key={result.localized_name}>
+                        <li className= "spacing=10dp">              
+                          {result.localized_name},
+                        </li>
+                      </React.Fragment>
+                      )
+                     })
+                    :
+                    <h5>wait......</h5>
+                  }
+                  </p>
+                  </th>
+                  </tr>
                 </div>
-            </div>
-        );
+          </div>
+        )
     }
 }
+
 
 export default JumbotronDetail

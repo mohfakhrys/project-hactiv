@@ -1,6 +1,5 @@
 import React,{Component} from 'react'
 import Navbar from '../component/Navbar'
-import Gridimage from '../component/Gridimage'
 import JumbotronNews from '../component/JumbotronNews'
 import Footer from '../component/Footer'
 
@@ -9,7 +8,7 @@ class News extends Component{
         return(
             <div className="bg-dark">
                 <Navbar/>
-                <Gridimage/>
+                {/* <Gridimage/> */}
                 <JumbotronNews/>
                 <Footer/>
             </div>

@@ -4,4 +4,5 @@ function selectContact(contact) {
     payload: contact
   }
 }
+
 export default selectContact;
